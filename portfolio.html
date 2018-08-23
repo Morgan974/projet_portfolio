@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio de Morgan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/styles.css" />
+
+</head>
+<body>
+    <div class="page">
+        <div class="fond">
+            <div class="header">
+                <div id="hidden" class="hidden">
+                    <div class="menu">
+                        <a href="#acceuil">Acceuil</a>
+                        <a href="#univers">L'Univers</a>
+                        <a href="#galerie">Les Provinces</a>
+                        <a href="#Aventuries">Les Aventuriés</a>
+                        <a href="#contact">Contact</a>     
+                    </div>
+                </div>
+                <span onclick="ouvreNav()">
+                    <img src="https://via.placeholder.com/100x25" alt="languet">
+                </span>
+            </div>
+            
+            <div class="main">
+                <div id="acceuil">
+                    <div class="moi">
+                        <img src="https://via.placeholder.com/400x600" alt="portrait">
+                        <div class="information">
+                            <img src="https://via.placeholder.com/200x500" alt="portrait">
+                            <img src="https://via.placeholder.com/200x500" alt="portrait">
+                            <img src="https://via.placeholder.com/200x500" alt="portrait">
+                        </div>                        
+                    </div>
+                </div>
+                <div id="univers">
+                    <div class="info">
+                    </div>
+                    <div class="carte">
+                        <img src="https://via.placeholder.com/1250x450" alt="carte">
+                    </div>
+                </div>
+                <div id="galerie">
+                    <div class="info">
+                    </div>
+                    <div class="mosaic">
+                        <img src="https://via.placeholder.com/150x150" alt="img1">
+                        <img src="https://via.placeholder.com/150x150" alt="img2">
+                        <img src="https://via.placeholder.com/150x150" alt="img3">
+                        <img src="https://via.placeholder.com/150x150" alt="img4">
+                        <img src="https://via.placeholder.com/150x150" alt="img5">
+                        <img src="https://via.placeholder.com/150x150" alt="img6">
+                        <img src="https://via.placeholder.com/150x150" alt="img7">
+                        <img src="https://via.placeholder.com/150x150" alt="img8">
+                        <img src="https://via.placeholder.com/150x150" alt="img9">
+                    </div> 
+                </div>
+                <div id="Aventuries">
+                    <div class="info">
+                    </div>
+                    <div class="personnage">
+                        <img src="https://via.placeholder.com/250x250" alt="img1">
+                        <img src="https://via.placeholder.com/250x250" alt="img2">
+                        <img src="https://via.placeholder.com/250x250" alt="img3">
+                        <img src="https://via.placeholder.com/250x250" alt="img4">
+                        <img src="https://via.placeholder.com/250x250" alt="img5">
+                    </div>
+                </div>
+                <div id="contact">
+                    <div class="message">
+                        <form action="/ma-page-de-traitement" method="post">
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="user_name">
+                                <label for="mail">e-mail :</label>
+                                <input type="email" id="mail" name="user_mail">
+                                <label for="msg">Message :</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                                <button type="submit">Envoyer le message</button>
+                        </form>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    function ouvreNav() {
+        document.getElementById("hidden").style.display = "flex";
+    }
+
+    function fermeNav() {
+        document.getElementById("hidden").style.display = "none";
+    }
+    </script>
+</body>
+</html>

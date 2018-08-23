@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+}
+.page{
+
+}
+.fond{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-flow: column wrap;
+    align-items: center;
+    align-self: center;
+}
+.hidden{
+    display: none;
+}
+span img{
+    border: 1px solid darkblue;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    padding:6px 10px 12px 10px;
+    border-radius: 0% 0% 20% 20%;   
+}
+.menu a{
+    padding:0 5px;
+}
+
+.info{
+    background-color: rgb(10, 70, 94);
+    height: 25vh;
+}
+.moi{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 25px;
+}
+.moi img{
+    padding: 5px;
+}
+.carte{
+    display: flex;
+    height: 75vh;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 25px;
+}
+.carte img{
+    width: 100%;
+    height: 100%;
+}
+.mosaic{
+    display: flex;
+    height: 75vh;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.personnage{
+    display: flex;
+    height: 75vh;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+}
+.mosaic img{
+    margin: 5px;
+}
+.personnage img{
+    margin: 5px;
+}
+.message{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+label{
+    padding: 10px;
+}
+input{
+    width: 50vh;
+}
+textarea{
+    width: 50vh;
+    height: 20vh;
+}
+button{
+    margin: 25px;
+}
+
+#acceuil{
+    background-color: red;
+    height: 100vh;
+}
+#univers{
+    background-color: green;
+}
+#galerie{
+    background-color: yellowgreen;
+}
+#Aventuries{
+    background-color: blue;
+}
+#contact{
+    background-color: purple;
+}
+
+@media (max-width: 767.98px){
+    .menu{
+        flex-flow: column wrap;
+        align-items: center;
+        height: auto;
+    }
+    .information{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+@media (max-width: 1199.98px){
+    #acceuil{
+        height: auto;
+    }
+    .moi{
+        padding: 5px;
+        flex-flow: column wrap;
+        align-content: center;
+        align-items: center;
+    }
+}
