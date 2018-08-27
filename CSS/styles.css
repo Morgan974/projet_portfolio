@@ -1,9 +1,6 @@
 *{
     margin: 0;
 }
-.page{
-
-}
 .fond{
     display: flex;
     flex-direction: column;
@@ -39,6 +36,10 @@ span img{
     background-color: rgb(10, 70, 94);
     height: 25vh;
 }
+.info2{
+    background-color: rgb(10, 70, 94);
+    height: 10vh;
+}
 .moi{
     display: flex;
     flex-flow: row wrap;
@@ -57,16 +58,31 @@ span img{
     padding: 25px;
 }
 .carte img{
+    align-content: stretch;
     width: 100%;
     height: 100%;
 }
 .mosaic{
     display: flex;
-    height: 75vh;
+    height: 100vh;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+@media (max-width: 767.98px){
+    .mosaic{
+    display: flex;
+    height: auto;
+    flex-flow: column wrap;}
+}
+@media (max-width: 1199.98px){
+    .mosaic{
+    display: flex;
+    height: 100vh;
+    flex-flow: row wrap;}
+}
+
 .personnage{
     display: flex;
     height: 75vh;
