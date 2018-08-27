@@ -71,22 +71,14 @@ span img{
 }
 
 @media (max-width: 767.98px){
-    .mosaic{
-    display: flex;
-    height: auto;
-    flex-flow: column wrap;}
 }
 @media (max-width: 1199.98px){
-    .mosaic{
-    display: flex;
-    height: 100vh;
-    flex-flow: row wrap;}
 }
 
 .personnage{
     display: flex;
-    height: 75vh;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
+    height: 100vh;
     justify-content: space-around;
     align-content: center;
     align-items: baseline;
@@ -131,9 +123,11 @@ button{
 }
 #galerie{
     background-color: yellowgreen;
+    height: 100vh;
 }
 #Aventuries{
     background-color: blue;
+    height: 100vh;
 }
 #contact{
     background-color: purple;
@@ -149,6 +143,10 @@ button{
         display: flex;
         flex-flow: column wrap;
     }
+    .mosaic{
+        height: auto;
+        flex-flow: column wrap;
+    }
 }
 
 @media (max-width: 1199.98px){
@@ -160,5 +158,17 @@ button{
         flex-flow: column wrap;
         align-content: center;
         align-items: center;
+    }
+    .mosaic{
+        height: 100vh;
+        flex-flow: row wrap;
+    }
+    .personnage{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        height: auto;
+    }
+    #Aventuries{
+        height: auto;
     }
 }
